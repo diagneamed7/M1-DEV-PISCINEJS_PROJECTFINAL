@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projet Final - Authentification Supabase</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Page d'accueil -->
+    <section id="home" class="card active">
+      <div class="welcome-header">
+        <i class="fas fa-user-shield welcome-icon"></i>
+        <h1>Authentification</h1>
+        <p class="welcome-subtitle">Gérez votre profil en toute sécurité</p>
+      </div>
+      
+      <div class="info-section">
+        <div class="info-item">
+          <i class="fas fa-user"></i>
+          <span>Mouhamed Diagne</span>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-code"></i>
+          <span>HTML, CSS, JS, Supabase</span>
+        </div>
+      </div>
+      
+      <div class="buttons">
+        <button id="go-signin">
+          <i class="fas fa-sign-in-alt"></i>
+          Se connecter
+        </button>
+        <button id="go-signup">
+          <i class="fas fa-user-plus"></i>
+          S'inscrire
+        </button>
+      </div>
+    </section>
+
+    <!-- Page Connexion -->
+    <section id="auth-signin" class="card">
+      <div class="form-header">
+        <i class="fas fa-sign-in-alt"></i>
+        <h2>Connexion</h2>
+        <p class="form-subtitle">Accédez à votre compte</p>
+      </div>
+      
+      <div class="form-group">
+        <label><i class="fas fa-envelope"></i> Email</label>
+        <input type="email" id="signin-email" placeholder="exemple@mail.com">
+      </div>
+      
+      <div class="form-group">
+        <label><i class="fas fa-lock"></i> Mot de passe</label>
+        <input type="password" id="signin-password" placeholder="********">
+      </div>
+      
+      <div class="form-actions">
+        <button id="signin-btn">
+          <i class="fas fa-sign-in-alt"></i>
+          Se connecter
+        </button>
+        <button class="back-btn">
+          <i class="fas fa-arrow-left"></i>
+          Retour
+        </button>
+      </div>
+    </section>
+
+    <!-- Page Inscription -->
+    <section id="auth-signup" class="card">
+      <div class="form-header">
+        <i class="fas fa-user-plus"></i>
+        <h2>Inscription</h2>
+        <p class="form-subtitle">Créez votre compte</p>
+      </div>
+      
+      <div class="form-group">
+        <label><i class="fas fa-envelope"></i> Email</label>
+        <input type="email" id="signup-email" placeholder="exemple@mail.com">
+      </div>
+      
+      <div class="form-group">
+        <label><i class="fas fa-lock"></i> Mot de passe</label>
+        <input type="password" id="signup-password" placeholder="********">
+      </div>
+      
+      <div class="form-group">
+        <label><i class="fas fa-user"></i> Nom d'utilisateur</label>
+        <input type="text" id="signup-username" placeholder="mouhamed123">
+      </div>
+      
+      <div class="form-actions">
+        <button id="signup-btn">
+          <i class="fas fa-user-plus"></i>
+          S'inscrire
+        </button>
+        <button class="back-btn">
+          <i class="fas fa-arrow-left"></i>
+          Retour
+        </button>
+      </div>
+    </section>
+
+    <!-- Page connecté -->
+    <section id="connected" class="card">
+      <div class="success-header">
+        <i class="fas fa-check-circle success-icon"></i>
+        <h2>Connexion réussie !</h2>
+        <p class="success-message">Bienvenue dans votre espace personnel</p>
+      </div>
+      
+      <div class="buttons">
+        <button id="view-profile">
+          <i class="fas fa-user-circle"></i>
+          Voir mon profil
+        </button>
+        <button id="signout-btn">
+          <i class="fas fa-sign-out-alt"></i>
+          Se déconnecter
+        </button>
+      </div>
+    </section>
+
+    <!-- Page Profil -->
+    <section id="profile" class="card">
+      <div class="profile-header">
+        <i class="fas fa-user-circle profile-icon"></i>
+        <h2>Mon Profil</h2>
+        <p class="profile-subtitle">Gérez vos informations personnelles</p>
+      </div>
+      
+      <div class="form-group">
+        <label><i class="fas fa-user"></i> Nom d'utilisateur</label>
+        <input type="text" id="profile-username" readonly>
+      </div>
+      
+      <div class="form-group">
+        <label><i class="fas fa-quote-left"></i> Bio</label>
+        <textarea id="profile-bio" placeholder="Parlez-nous de vous..." readonly></textarea>
+      </div>
+      
+      <div class="form-actions">
+        <button id="update-profile-btn">
+          <i class="fas fa-edit"></i>
+          Modifier le profil
+        </button>
+        <button id="back-to-connected">
+          <i class="fas fa-arrow-left"></i>
+          Retour
+        </button>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
