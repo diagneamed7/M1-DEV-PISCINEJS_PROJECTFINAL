@@ -1,8 +1,8 @@
 # Projet Final - Application CRUD avec Supabase
 
 **Étudiant :** Mouhamed Diagne  
-**Email :** [votre-email@exemple.com]  
-**Date de remise :** 29 septembre 2024
+**Email :** diagneamed727@gmail.com 
+**Date de remise :** 29 septembre 2025
 
 ## Objectif
 Créer une application web simple utilisant Supabase pour gérer des profils utilisateurs avec authentification et opérations CRUD.
