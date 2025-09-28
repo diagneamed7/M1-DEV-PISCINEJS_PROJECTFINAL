@@ -58,10 +58,10 @@ Créer une table `profiles` pour stocker les informations des utilisateurs.
 ## 🚀 Déploiement
 
 ### Lien de déploiement
-[Votre lien de déploiement sera ajouté ici]
+https://diagneamed7.github.io/M1-DEV-PISCINEJS_PROJECTFINAL/
 
 ### Dépôt GitHub
-[Votre lien GitHub sera ajouté ici]
+https://github.com/diagneamed7/M1-DEV-PISCINEJS_PROJECTFINAL
 
 ## 📁 Structure du Projet
 ```
